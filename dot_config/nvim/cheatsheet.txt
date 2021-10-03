@@ -1,0 +1,23 @@
+## dotfiles
+Edit vim config in current tab        | :edit ~/.config/nvim/init.vim
+Edit vim config in new tab            | :tabe ~/.config/nvim/init.vim
+Edit vim config in vertical split     | :vsplit ~/.config/nvim/init.vim
+Edit vim config in horizontal split   | :split ~/.config/nvim/init.vim
+Edit tmux config in current tab       | :edit ~/.tmux.conf
+Edit tmux config in new tab           | :tabe ~/.tmux.conf
+Edit tmux config in vertical split    | :vsplit ~/.tmux.conf
+Edit tmux config in horizontal split  | :split ~/.tmux.conf
+Edit bspwm config in current tab      | :edit ~/.config/bspwm/bspwmrc
+Edit bspwm config in new tab          | :tabe ~/.config/bspwm/bspwmrc
+Edit bspwm config in vertical split   | :vsplit ~/.config/bspwm/bspwmrc
+Edit bspwm config in horizontal split | :split ~/.config/bspwm/bspwmrc
+
+## golang
+Run current file within tmux | :call VimuxRunCommand('go run ' . @%)
+Run tests within tmux        | :call VimuxRunCommand('go test ' . @%)
+
+## python
+Run current file within tmux | :call VimuxRunCommand('python ' . @%)
+
+## node @nodejs
+Run current file within tmux | :call VimuxRunCommand('node ' . @%)
