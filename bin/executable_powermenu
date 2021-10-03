@@ -1,0 +1,15 @@
+#!/bin/bash
+
+MENU="$(rofi\
+    -sep "|"\
+    -dmenu -i -p 'System'\
+    -hide-scrollbar\
+    -font "Hack 20"\
+    <<< " Lock| Logout| Reboot| Shutdown")"
+
+case "$MENU" in
+    *Lock) i3lock-fancy ;;
+    *Logout) bspc quit ;;
+    *Reboot) systemctl reboot ;;
+    *Shutdown) systemctl -i poweroff
+esac

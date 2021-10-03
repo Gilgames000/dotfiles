@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+# only add floating scratchpad window node id to /tmp/scratchid
+bspc query -N -n .hidden.floating | xargs -i sh -c 'bspc query  --node {} -T | grep -q scratchpad && echo {} > /tmp/scratchid'

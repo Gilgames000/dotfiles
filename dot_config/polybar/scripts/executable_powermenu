@@ -1,0 +1,14 @@
+#!/bin/bash
+
+MENU="$(rofi\
+    -sep "|"\
+    -dmenu -i -p 'System'\
+    -hide-scrollbar\
+    <<< " Lock| Logout| Reboot| Shutdown")"
+
+case "$MENU" in
+    *Lock) i3lock-fancy ;;
+    *Logout) openbox --exit;;
+    *Reboot) systemctl reboot ;;
+    *Shutdown) systemctl -i poweroff
+esac

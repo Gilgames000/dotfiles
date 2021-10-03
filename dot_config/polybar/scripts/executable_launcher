@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rofi -modi run,drun\
+    -show drun\
+    -terminal st\
+    -display-drun 'Applications'\
+    -hide-scrollbar -show-icons -drun-icon-theme\
+    -font "Hack 16"
+

@@ -1,0 +1,10 @@
+{
+    "go.goplsOptions": {
+        "completeUnimported": true
+    },
+    "suggest.noselect": false,
+    "javascript.suggestionActions.enabled": false,
+    "coc.preferences.colorSupport": true,
+    "explorer.icon.enableNerdfont": true,
+    "clangd.path": "/home/gilgames/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
+}
